@@ -1,6 +1,6 @@
 # Introduction to ensemble lake modelling with LakeEnsemblR
 
-<a href="url"><img src="logo.png" align="right" height="180" width="180"/></a>
+<a href="url"><img src="logo.png" align="right" height="220" width="220"/></a>
 
 ------------------------------------------------------------------------
 
@@ -14,30 +14,22 @@
 
 :octocat: [Homepage](https://github.com/aemon-j/LakeEnsemblR)
 
-:page_facing_up: [Journal article](https://doi.org/10.1016/j.envsoft.2021.105101)
+:page_facing_up: [OA journal article on the LakeEnsemblR R-package](https://doi.org/10.1016/j.envsoft.2021.105101)
 
 
 ------------------------------------------------------------------------
 
 ## Description
 
-A guided walkthrough of the [R package
+This training module will provide an introduction into lake 
+hydrodynamic modelling. After a short introductory presentation 
+we will apply the 1D lake model [FLake](http://www.flake.igb-berlin.de/)
+to an example waterbody. After learning how to apply one hydrodynamic model, 
+we will dive into ensemble modelling with the [R package
 "LakeEnsemblR"](https://github.com/aemon-j/LakeEnsemblR) that has been
 developed within the GLEON modelling group. Learn how to set up multiple
 lake models for your lake physical system, how to calibrate your models
-and explore model uncertainty. Brainstorming of further ideas for how
-this package can be applied to aid further research. Everyone is welcome
-to attend, but the workshop is mostly aimed at people with at least some
-experience in lake modelling.
-
-## Acknowledgement
-
-Much of this workshop material was developed by the LakeEnsemblR core
-developers Jorrit Mesman, Johannes Feldbauer, Tadhg Moore, and Robert
-Ladwig. It was presented at GLEON21.5 in the GSA workshop series. We are
-very grateful for their help. 
-
-:computer: [Original GSA workshop material](https://github.com/shatwell/LakeEnsemblR_intro)
+and explore model uncertainty. 
 
 
 ## What will this workshop cover?
@@ -47,14 +39,14 @@ very grateful for their help.
 * Introduction to the FLake model
 
 * Introduction to LakeEnsemblR package: 
-- Why use ensembles? 
-- What is LakeEnsemblR?
+    - Why use ensembles? 
+    - What is LakeEnsemblR?
 
 * Using LakeEnsemblR: 
-- Standardisation of input data 
-- Functions 
-- Visualising output & calibration 
-- Apply it to YOUR lake! (or on OUR examples)
+    - Standardisation of input data 
+    - Functions 
+    - Visualising output & calibration 
+    - Apply it to YOUR lake! (or on OUR examples)
 
 ## Prerequisites
 
@@ -69,9 +61,14 @@ like PyNcView. Windows users can download PyNcView for example
 install PyNcView via [PyPi](https://pypi.python.org/pypi), then with the
 command ```pip install pyncview```.
 
-### 2. Set up the LakeEnsemblR R-package 
+### 2. Set up the FLake hydrodynamic model
 
-Clone or download files from this Github repository. To do this, first install the remotes, ggplot2, ggpubr and reshape packages in R.
+Add information on FLake setup here...
+
+### 3. Set up the LakeEnsemblR R-package 
+
+Clone or download files from this Github repository to a local directory on your computer. 
+To do this, first install the remotes, ggplot2, ggpubr and reshape packages in R.
 ```
 install.packages("remotes")
 install.packages("ggplot2")
@@ -132,5 +129,17 @@ areas, depths and climatic zones that have been collated to show you
 different applications of ```LakeEnsemblR```. They can be downloaded from
 the [LER_examples](https://github.com/aemon-j/LER_examples) repository
 on the "aemon-j" GitHub account.
+
+
+## Acknowledgement
+
+The workshop material on LakeEnsemblR was developed by the LakeEnsemblR core
+developers Jorrit Mesman, Johannes Feldbauer, Tadhg Moore, and Robert
+Ladwig. It was presented at GLEON21.5 in the GSA workshop series. We are
+very grateful for their help. 
+
+:computer: [Original LakeEnsemblR GSA workshop material](https://github.com/shatwell/LakeEnsemblR_intro)
+
+
 
 ------------------------------------------------------------------------
