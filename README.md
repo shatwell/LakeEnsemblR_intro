@@ -1,15 +1,21 @@
 # Introduction to ensemble lake modelling with LakeEnsemblR
 
-<a href="url"><img src="logo.png" align="right" height="220" width="220"/></a>
+<a href="url"><img src="logo.png" align="right" height="180" width="180"/></a>
 
 ------------------------------------------------------------------------
 
 :spiral_calendar: October 13, 2022
+
 :alarm_clock: 9:00-13:00 
+
 :busts_in_silhouette: Tom Shatwell, Karsten Rinke 
+
 :computer: [Material](https://github.com/shatwell/LakeEnsemblR_intro)
+
 :octocat: [Homepage](https://github.com/aemon-j/LakeEnsemblR)
+
 :page_facing_up: [Journal article](https://doi.org/10.1016/j.envsoft.2021.105101)
+
 
 ------------------------------------------------------------------------
 
@@ -30,20 +36,25 @@ Much of this workshop material was developed by the LakeEnsemblR core
 developers Jorrit Mesman, Johannes Feldbauer, Tadhg Moore, and Robert
 Ladwig. It was presented at GLEON21.5 in the GSA workshop series. We are
 very grateful for their help. 
+
 :computer: [Original GSA workshop material](https://github.com/shatwell/LakeEnsemblR_intro)
+
 
 ## What will this workshop cover?
 
-Introduction to hydrodynamic modelling of lakes
+* Introduction to hydrodynamic modelling of lakes
 
-Introduction to the FLake model
+* Introduction to the FLake model
 
-Introduction to LakeEnsemblR package: - Why use ensembles? - What is
-LakeEnsemblR?
+* Introduction to LakeEnsemblR package: 
+- Why use ensembles? 
+- What is LakeEnsemblR?
 
-Using LakeEnsemblR: - Standardisation of input data - Functions -
-Visualising output & calibration - Apply it to YOUR lake! (or on OUR
-examples)
+* Using LakeEnsemblR: 
+- Standardisation of input data 
+- Functions 
+- Visualising output & calibration 
+- Apply it to YOUR lake! (or on OUR examples)
 
 ## Prerequisites
 
@@ -58,8 +69,9 @@ like PyNcView. Windows users can download PyNcView for example
 install PyNcView via [PyPi](https://pypi.python.org/pypi), then with the
 command ```pip install pyncview```.
 
-### 2. Set up the LakeEnsemblR R-package Clone or download files from
-this Github repository. To do this, first install the remotes, ggplot2, ggpubr and reshape packages in R.
+### 2. Set up the LakeEnsemblR R-package 
+
+Clone or download files from this Github repository. To do this, first install the remotes, ggplot2, ggpubr and reshape packages in R.
 ```
 install.packages("remotes")
 install.packages("ggplot2")
@@ -79,10 +91,6 @@ remotes::install_github("aemon-j/MyLakeR")
 remotes::install_github("aemon-j/LakeEnsemblR")
 ```
 
-
-```
-require("devtools")   devtools::install_github("GLEON/rLakeAnalyzer")   devtools::install_github("GLEON/GLM3r", ref = "GLMv.3.1.0a3")   devtools::install_github("USGS-R/glmtools", ref = "ggplot_overhaul")   devtools::install_github("aemon-j/FLakeR", ref = "inflow")   devtools::install_github("aemon-j/GOTMr")   devtools::install_github("aemon-j/gotmtools")   devtools::install_github("aemon-j/SimstratR")   devtools::install_github("aemon-j/MyLakeR")   devtools::install_github("aemon-j/LakeEnsemblR")
-```
 
 #### Update: If you experience problems on macOS (we tested the model
 binaries only for macOS Catalina) with error messages like 'dyld:
@@ -108,14 +116,18 @@ and
 
 ## Files
 
-### Workshop Files The HTML and PDF files in the repository both
+### Workshop Files 
+
+The HTML and PDF files in the repository both
 contain the information needed for the workshop. You can pick which one
 you prefer. You can copy the code into an R script and run it yourself,
 or use the pre-made R script ("InventWater_LakeEnsemblR.R"), which
 contains all the lines of code that are run during the workshop and some
 short comments.
 
-### LakeEnsemblR Examples There is a selection of lakes of different
+### LakeEnsemblR Examples 
+
+There is a selection of lakes of different
 areas, depths and climatic zones that have been collated to show you
 different applications of ```LakeEnsemblR```. They can be downloaded from
 the [LER_examples](https://github.com/aemon-j/LER_examples) repository
