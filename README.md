@@ -1,19 +1,14 @@
-# Introduction to ensemble lake modelling with LakeEnsemblR
+# Hydrodynamic and ensemble lake modelling
 
 <a href="url"><img src="logo.png" align="right" height="220" width="220"/></a>
 
 ------------------------------------------------------------------------
 
 :spiral_calendar: October 13, 2022
-
 :alarm_clock: 9:00-13:00 
-
 :busts_in_silhouette: Tom Shatwell, Karsten Rinke 
-
 :computer: [Material](https://github.com/shatwell/LakeEnsemblR_intro)
-
 :octocat: [Homepage](https://github.com/aemon-j/LakeEnsemblR)
-
 :page_facing_up: [OA journal article on the LakeEnsemblR R-package](https://doi.org/10.1016/j.envsoft.2021.105101)
 
 
@@ -67,21 +62,24 @@ at tom.shatwell@ufz.de.
 Clone or download files from this Github repository to a local directory on your computer. 
 Keep the file structure as it is. That should be all you have to do! 
 
-Optional: if you would like to compile the model yourself and have the gfortran compiler on your system,
+####Optional: 
+If you would like to compile the model yourself and have the gfortran compiler on your system,
 then follow these steps:
 
   1. On your computer, navigate to /path/to/LakeEnsemblR_intro/flake/sources/ and then
     run the file "makeflake_win.bat" on Windows, "makeflake_linux.sh" on linux, or "makeflake_mac.sh" on macOS. 
-    This should create an executable file in the sources directory called ```flake.exe``` on win, 
+    This should create an executable file in the "sources" directory called ```flake.exe``` on win, 
     ```nixflake``` on linux, or ```macflake``` on macOS.
     
-  2. Move the executable file from sources up one level to /path/to/LakeEnsemblR_intro/flake/ and replace the 
-    existing executable with the same name.
+  2. Move the executable file you just created from the "LakeEnsemblR_intro/flake/sources" directory 
+  up one level to /LakeEnsemblR_intro/flake/ and replace the existing executable with the same name.
 
 
 ### 3. Set up the LakeEnsemblR R-package 
 
-To do this, first install the remotes, ggplot2, ggpubr and reshape packages in R.
+This step can take a while, so rather do it in advance of the training. 
+To set up LakeEnsemblR, first open R or your IDE like RStudio. Then install the "remotes", "ggplot2", "ggpubr" and "reshape" 
+packages by entering the following commands into the console.
 ```
 install.packages("remotes")
 install.packages("ggplot2")
@@ -102,8 +100,9 @@ remotes::install_github("aemon-j/LakeEnsemblR")
 ```
 
 
-#### Update: If you experience problems on macOS (we tested the model
-binaries only for macOS Catalina) with error messages like 'dyld:
+#### Update: 
+If you experience problems on macOS (the model
+binaries were only tested for macOS Catalina) with error messages like 'dyld:
 Library not loaded', you can try the following approach:
 
 -   install the missing libraries, e.g. by using
@@ -123,6 +122,14 @@ and
 
 -   if you still experience library problems, you can continue
     installing these missing dependencies using 'brew'
+
+### 4. Check that your setup is working
+
+Open RStudio (for instance by double-clicking the file ```LakeEnsemblR_intro.Rproj```), 
+and then run the test script ```test_BEFORE_workshop.R```.
+
+If you ran the script to the end without errors, congratulations, everything looks good.
+If you encountered errors
 
 ## Files
 
