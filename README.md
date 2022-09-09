@@ -5,10 +5,15 @@
 ------------------------------------------------------------------------
 
 :spiral_calendar: October 13, 2022
+
 :alarm_clock: 9:00-13:00 
+
 :busts_in_silhouette: Tom Shatwell, Karsten Rinke 
+
 :computer: [Material](https://github.com/shatwell/LakeEnsemblR_intro)
+
 :octocat: [Homepage](https://github.com/aemon-j/LakeEnsemblR)
+
 :page_facing_up: [OA journal article on the LakeEnsemblR R-package](https://doi.org/10.1016/j.envsoft.2021.105101)
 
 
