@@ -70,12 +70,12 @@ Keep the file structure as it is. That should be all you have to do!
 Optional: if you would like to compile the model yourself and have the gfortran compiler on your system,
 then follow these steps:
 
-    - On your computer, navigate to /path/to/LakeEnsemblR_intro/flake/sources/ and then
+  1. On your computer, navigate to /path/to/LakeEnsemblR_intro/flake/sources/ and then
     run the file "makeflake_win.bat" on Windows, "makeflake_linux.sh" on linux, or "makeflake_mac.sh" on macOS. 
     This should create an executable file in the sources directory called ```flake.exe``` on win, 
     ```nixflake``` on linux, or ```macflake``` on macOS.
     
-    - Move the executable file from sources up one level to /path/to/LakeEnsemblR_intro/flake/ and replace the 
+  2. Move the executable file from sources up one level to /path/to/LakeEnsemblR_intro/flake/ and replace the 
     existing executable with the same name.
 
 
