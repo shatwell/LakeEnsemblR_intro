@@ -1,0 +1,37 @@
+! Local lake for ISIMIP simulations
+&SIMULATION_PARAMS
+del_time_lk = 10800,      ! Time step [s] 
+time_step_number = 113960,  ! The total number of time steps (historical 423680, piControl: 1867112, rcp26: 859048, rcp60: 274664)
+save_interval_n = 8,        ! Saving interval in time steps 4 for 6h, 8 for 3h, 1 for 24h 
+!yearLength = 365.25,        
+T_wML_in = 4.,
+T_bot_in = 4.,
+h_ML_in = 3.,
+/
+&METEO
+z_wind_m(1) =  10.0,				   ! height above the surface where wind was measured [m]
+z_Taqa_m(1) =  2.00,				   ! height of the air temperature and humidity measurements [m]
+z_Tw_m(1)   =  0.00,				   ! depth of the water temperature measurements (currently unused)
+meteofile = 'erken_ewembi.txt', ! name of input file with meteorological information
+outputfile = 'erken_flake.rslt',	           ! filename for output
+/
+&LAKE_PARAMS
+depth_w_lk = 9,           ! Lake depth [m]
+fetch_lk = 4900,      ! Typical wind fetch [m] 
+!sediments_on = .false.,      ! .FALSE. if the sediments layer is switched off
+depth_bs_lk =  4.0,         ! Depth of the thermally active layer of bottom sediments [m] (typically 2-10m)
+T_bs_lk = 6.56,         ! Temperature at the outer edge of the thermally active layer of the bottom sediments [C] (typically 4-7`C)
+latitude_lk = 59.84,         ! Geographical latitude [dgr]
+!c_relax_C   = 0.1,          ! profile relaxation time
+!C_T_max = 0.71828182,       !
+/
+&TRANSPARENCY
+nband_optic =     1,        ! Number of wave-length bands
+frac_optic =      1,        ! Fractions of total radiation flux (comma separated, the SUM of values should be 1, the TOTAL NUMBER of values should be equal to nband_optic)
+extincoef_optic = 0.44,      ! Extinction coefficients  [1/m] (comma separated, the TOTAL NUMBER of values should be equal to nband_optic)      
+/
+&inflow
+DTinflow = 0.0, 
+DTfixed  = .true., 
+QS       = 0.0 	! m/s 
+/ 
