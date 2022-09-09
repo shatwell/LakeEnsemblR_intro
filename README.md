@@ -59,15 +59,28 @@ free version). You will also need a decent text editor (e.g.
 like PyNcView. Windows users can download PyNcView for example
 [here](https://getwinpcsoft.com/PyNcView-2257247/). Linux users can
 install PyNcView via [PyPi](https://pypi.python.org/pypi), then with the
-command ```pip install pyncview```.
+command ```pip install pyncview```. Mac users, try to find a download on the web, or email me
+at tom.shatwell@ufz.de.
 
 ### 2. Set up the FLake hydrodynamic model
 
-Add information on FLake setup here...
+Clone or download files from this Github repository to a local directory on your computer. 
+Keep the file structure as it is. That should be all you have to do! 
+
+Optional: if you would like to compile the model yourself and have the gfortran compiler on your system,
+then follow these steps:
+
+    - On your computer, navigate to /path/to/LakeEnsemblR_intro/flake/sources/ and then
+    run the file "makeflake_win.bat" on Windows, "makeflake_linux.sh" on linux, or "makeflake_mac.sh" on macOS. 
+    This should create an executable file in the sources directory called ```flake.exe``` on win, 
+    ```nixflake``` on linux, or ```macflake``` on macOS.
+    
+    - Move the executable file from sources up one level to /path/to/LakeEnsemblR_intro/flake/ and replace the 
+    existing executable with the same name.
+
 
 ### 3. Set up the LakeEnsemblR R-package 
 
-Clone or download files from this Github repository to a local directory on your computer. 
 To do this, first install the remotes, ggplot2, ggpubr and reshape packages in R.
 ```
 install.packages("remotes")
@@ -133,7 +146,8 @@ on the "aemon-j" GitHub account.
 
 ## Acknowledgement
 
-The workshop material on LakeEnsemblR was developed by the LakeEnsemblR core
+The workshop material on LakeEnsemblR, including the nice presentation and structure
+in this github repo, was developed by the LakeEnsemblR core
 developers Jorrit Mesman, Johannes Feldbauer, Tadhg Moore, and Robert
 Ladwig. It was presented at GLEON21.5 in the GSA workshop series. We are
 very grateful for their help. 
