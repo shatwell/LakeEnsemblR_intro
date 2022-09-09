@@ -62,7 +62,7 @@ at tom.shatwell@ufz.de.
 Clone or download files from this Github repository to a local directory on your computer. 
 Keep the file structure as it is. That should be all you have to do! 
 
-####Optional: 
+#### Optional: 
 If you would like to compile the model yourself and have the gfortran compiler on your system,
 then follow these steps:
 
@@ -86,7 +86,9 @@ install.packages("ggplot2")
 install.packages("ggpubr")
 install.packages("reshape")
 ```
-Next, install the specific LakeEnsemblR packages from github:
+Next, install the specific LakeEnsemblR packages from github. 
+
+#### Windows and Linux users:
 ```
 remotes::install_github("GLEON/rLakeAnalyzer")
 remotes::install_github("aemon-j/GLM3r", ref = "v3.1.1")
@@ -100,28 +102,21 @@ remotes::install_github("aemon-j/LakeEnsemblR")
 ```
 
 
-#### Update: 
-If you experience problems on macOS (the model
-binaries were only tested for macOS Catalina) with error messages like 'dyld:
-Library not loaded', you can try the following approach:
+#### macOS users:
+```
+remotes::install_github("GLEON/rLakeAnalyzer")
+remotes::install_github("aemon-j/GLM3r", ref = "macOS")
+remotes::install_github("USGS-R/glmtools", ref = "ggplot_overhaul")
+remotes::install_github("aemon-j/FLakeR", ref = "macOS")
+remotes::install_github("aemon-J/GOTMr", ref = "macOS")
+remotes::install_github("aemon-j/gotmtools")
+remotes::install_github("aemon-j/SimstratR", ref = "macOS")
+remotes::install_github("aemon-j/MyLakeR")
+remotes::install_github("aemon-j/LakeEnsemblR")
+```
 
--   install the missing libraries, e.g. by using
-    ['brew'](https://brew.sh):
-    `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
--   then you will need the missing libraries or you will need to update
-    your current versions of gfortran, netcdf and gc:
-    `brew install gcc`, `brew install netcdf`, `brew install gc`
--   check if everything is working: `gcc -v` and `gfortran --version`
-    which should give you
+Unfortunately, the macOS version of GLM will differ to the one included in the executables for Windows and Linux. GLM on macOS will be version 3.2.0a8 (most recent on January 13, 2022), Windows/Linux use 3.1.1.
 
-> "Apple clang version 12.0.0 (clang-1200.0.32.2)"
-
-and
-
-> "GNU Fortran (Homebrew GCC 10.2.0) 10.2.0"
-
--   if you still experience library problems, you can continue
-    installing these missing dependencies using 'brew'
 
 ### 4. Check that your setup is working
 
