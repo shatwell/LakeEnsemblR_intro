@@ -8,7 +8,7 @@
 
 :alarm_clock: 9:00-13:00 
 
-:busts_in_silhouette: Tom Shatwell, Karsten Rinke 
+:busts_in_silhouette: Tom Shatwell (tom.shatwell@ufz.de), Karsten Rinke (karsten.rinke@ufz.de)
 
 :computer: [Material](https://github.com/shatwell/LakeEnsemblR_intro)
 
@@ -46,8 +46,18 @@ and explore model uncertainty.
     - Standardisation of input data 
     - Functions 
     - Visualising output & calibration 
-    - Apply it to YOUR lake! (or on OUR examples)
 
+* If you would like to model your own lake, you should gather the following data:
+    - Lake data like hypsographic / bathymetric information (depth vs area), extinction coefficient or Secchi depth, location (lat/lon)
+    - Meteorological data (shortwave radiation, air temp, humidity, wind, cloud cover, precipitation)
+    
+    - (Optional) Inflow data (flow rate, inflow temperature, salinity if relevant)
+    - (Optional) Outflow data
+    - (Optional) Observed data (e.g. temperature profiles, ice, water level)
+    
+    See the [LakeEnsemblR vignette](https://github.com/aemon-j/LakeEnsemblR/blob/main/vignettes/LakeEnsemblR_vignette.pdf) and the [LakeEnsemblR examples](https://github.com/aemon-j/LER_examples) for more deatiled information.
+    
+    
 ## Prerequisites
 
 ### 1. Install the required software
@@ -129,7 +139,7 @@ Open RStudio (for instance by double-clicking the file ```LakeEnsemblR_intro.Rpr
 and then run the test script ```test_BEFORE_workshop.R```.
 
 If you ran the script to the end without errors, congratulations, everything looks good.
-If you encountered errors
+If you encountered errors or encounter other problems, please get in touch by email.
 
 ## Files
 
