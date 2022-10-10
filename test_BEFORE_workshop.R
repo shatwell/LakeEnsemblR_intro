@@ -91,7 +91,7 @@ setwd("../")
 
 ## Test FLake in stand-alone mode
 
-setwd("flake")
+setwd("../flake")
 
 ### windows
 if (.Platform$pkgType == "win.binary") {
