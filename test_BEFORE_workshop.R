@@ -91,7 +91,8 @@ setwd("../")
 
 ## Test FLake in stand-alone mode
 
-setwd("../flake")
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))
+setwd("flake")
 
 ### windows
 if (.Platform$pkgType == "win.binary") {
