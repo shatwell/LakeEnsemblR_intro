@@ -39,7 +39,7 @@ and explore model uncertainty.
 * Introduction to the FLake model
 
 * Introduction to LakeEnsemblR package: 
-    - Why use ensembles? 
+    - Why use ensembles? (link to the [introductory exercise](https://forms.gle/SqHyTjxFaJTVzcD76))
     - What is LakeEnsemblR?
 
 * Using LakeEnsemblR: 
