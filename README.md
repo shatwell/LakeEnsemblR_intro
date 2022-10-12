@@ -169,7 +169,7 @@ developers Jorrit Mesman, Johannes Feldbauer, Tadhg Moore, and Robert
 Ladwig. It was presented at GLEON21.5 in the GSA workshop series. We are
 very grateful for their help. 
 
-:computer: [Original LakeEnsemblR GSA workshop material](https://github.com/shatwell/LakeEnsemblR_intro)
+:computer: [Original LakeEnsemblR GSA workshop material](https://github.com/gsagleon/G21.5_GSA_workshop/tree/master/LakeEnsemblR)
 
 
 
