@@ -106,13 +106,13 @@ run_ensemble("LakeEnsemblR.yaml",
              add = FALSE)
 
 ## Plot the result
-p3 <- plot_heatmap("output/ensemble_output.nc", var = "dens") +
+p3 <- plot_heatmap("output/ensemble_output.nc", var = "temp") +
   theme_light() + scale_colour_gradientn(limits = c(998, 1001),
                                          colours = rev(brewer.pal(11, "Spectral")))
 p4 <- plot_ensemble("output/ensemble_output.nc", model = c("FLake", "GLM",
                                                            "GOTM", "Simstrat",
                                                            "MyLake"),
-                    var = "dens", date = "2010-05-27 00:00:00") +
+                    var = "temp", date = "2010-05-27 00:00:00") +
   theme_light()
 
 ggarrange(p3, p4, ncol = 1, nrow = 2)
